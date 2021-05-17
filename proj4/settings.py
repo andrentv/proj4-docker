@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
+import django_on_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -124,3 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+django_on_heroku.settings(locals())
